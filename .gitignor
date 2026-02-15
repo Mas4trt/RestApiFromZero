@@ -1,0 +1,74 @@
+# Скомпилированные бинарные файлы
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Директория с зависимостями Go (если ты используешь vendor)
+/vendor/
+
+# Зависимости Go (если ты используешь go modules)
+go.sum
+
+# Временные файлы и директории
+*.tmp
+*.temp
+/tmp
+
+# Директория, куда Go кладет скомпилированные файлы (если ты явно ее создаешь)
+/bin/
+/build/
+/dist/
+
+# Файлы, специфичные для ОС
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Файлы и папки VS Code (IDE)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Папка с настройками IDE (если используешь IntelliJ)
+.idea/
+*.iml
+
+# Файлы с секретами и переменными окружения
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.crt
+
+# Логи и базы данных
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker
+.dockerignore
+
+# Папки с отчетами о тестировании и покрытии кода
+/coverage/
+/cover.out
+/cover.html
+/profile.out
+/cpu.prof
+/mem.prof
+
+# Файлы отладки и брейкпоинтов VS Code
+launch.json
+tasks.json
