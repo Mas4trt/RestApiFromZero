@@ -41,7 +41,7 @@ func (h *Handlers) GetAllTasks(w http.ResponseWriter, r *http.Request) {
 }
 
 func (h *Handlers) GetTask(w http.ResponseWriter, r *http.Request) {
-	pathParts := strings.Split(strings.TrimPrefix(r.URL.Path, "/"), "/")
+	pathParts := strings.Split(strings.TrimPrefix(r.URL.Path, "/tasks/"), "/")
 	idStr := pathParts[0]
 
 	id, err := strconv.Atoi(idStr)
@@ -85,7 +85,7 @@ func (h *Handlers) CreateTask(w http.ResponseWriter, r *http.Request) {
 }
 
 func (h *Handlers) UpdateTask(w http.ResponseWriter, r *http.Request) {
-	pathParts := strings.Split(strings.TrimPrefix(r.URL.Path, "/"), "/")
+	pathParts := strings.Split(strings.TrimPrefix(r.URL.Path, "/tasks/"), "/")
 	idStr := pathParts[0]
 
 	id, err := strconv.Atoi(idStr)
